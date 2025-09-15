@@ -60,10 +60,14 @@ export default function Navbar() {
           <LanguageSwitcher />
           <ul className="flex flex-col gap-4 font-bold mt-4">
             <li>
+              <Link href="/">
               <span className="text-[#3178C6]">01.</span> Home
+              </Link>
             </li>
             <li>
+              <Link href="/about"> 
               <span className="text-[#3178C6]">02.</span> About
+              </Link>
             </li>
             <li>
               <span className="text-[#3178C6]">03.</span> Projects
