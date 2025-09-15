@@ -26,8 +26,11 @@ export default function About() {
     </div>
 
     {/* Texto */}
-    <div className="text-justify mt-5 font-sans">
-        <h1 className="font-bold text-2xl mb-5">[Carreira | Transformação]</h1>
+    <div className="lg:text-justify mt-5 font-sans">
+        <h1 className="font-bold mb-5 text-lg sm:text-2xl md:text-3xl lg:text-3xl">
+  [Carreira | Transformação]
+</h1>
+
       <p>
         Sou desenvolvedor fullstack em início de carreira, apaixonado por
         tecnologia e pelo impacto que ela pode gerar na vida das pessoas.
