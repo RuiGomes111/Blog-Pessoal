@@ -16,6 +16,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
       <p className=" text-sm mb-6">{post.date}</p>
       <div className="prose prose-invert mb-6">
         <p>{post.content}</p>
+       
       </div>
 
       {/* Botão voltar */}

@@ -9,7 +9,7 @@ export default async function GithubAPI() {
     login: string;
     name: string;
     location: string;
-    public_repos: string;
+    public_repos: number;
     followers: number;
     following: number;
     avatar_url: string;
@@ -18,7 +18,7 @@ export default async function GithubAPI() {
   };
 
   const response = await fetch("https://api.github.com/users/ruigomes111", {
-    next: { revalidate: 60 },
+    next: { revalidate: 600 },
   });
 
   if (!response.ok) {
@@ -37,7 +37,7 @@ export default async function GithubAPI() {
     visibility: string;
     updated_at: string;
   };
-  const repos = await fetch(" https://api.github.com/users/ruigomes111/repos", {
+  const repos = await fetch("https://api.github.com/users/ruigomes111/repos", {
     next: { revalidate: 60 },
   });
 
