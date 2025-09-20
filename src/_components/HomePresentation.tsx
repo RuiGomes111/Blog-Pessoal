@@ -5,11 +5,12 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import { FaArrowDown } from "react-icons/fa6";
 import { RiTiktokLine } from "react-icons/ri";
 import Link from "next/link";
+import ShinyText from './ShineText/ShinyText';
 
 export default function HomePresentation() {
   return (
     <>
-      <div className="flex flex-col justify-center mx-auto mt-10 items-center ">
+      <div className="flex flex-col justify-center   items-center mx-auto">
         <Image
           src="/avatar.png"
           alt=""
@@ -36,7 +37,15 @@ export default function HomePresentation() {
             </li>
           </ul>
         </div>
-        <h1 className="text-5xl sm:text-7xl lg:text-7xl pt-4 font-bold">Rui Gomes</h1>
+        <h1 className="text-5xl sm:text-7xl lg:text-7xl pt-4 font-bold">
+          <ShinyText 
+            text="Rui Gomes" 
+            disabled={false} 
+            speed={3} 
+            className='custom-class' 
+          />
+          
+        </h1>
         <span className="text-lg">Software Developer</span>
         <Link
           href={"#posts"}
