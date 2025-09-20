@@ -48,7 +48,7 @@ export default function HomePresentation() {
         </h1>
         <span className="text-lg">Software Developer</span>
         <Link
-          href={"#posts"}
+          href={"#about"}
           className="bg-[#3178C6] p-2 flex items-center rounded-xl mt-3 hover:bg-[#1e5da1] "
         >
           {" "}
