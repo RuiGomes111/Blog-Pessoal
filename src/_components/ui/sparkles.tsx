@@ -59,15 +59,37 @@ export const SparklesCore: React.FC<ParticlesProps> = ({
             fpsLimit: 120,
             detectRetina: true,
             interactivity: {
-              events: { onClick: { enable: true, mode: "push" }, onHover: { enable: false }, resize: true },
-              modes: { push: { quantity: 4 }, repulse: { distance: 200, duration: 0.4 } },
+              events: {
+                onClick: { enable: true, mode: "push" },
+                onHover: { enable: false },
+                resize: { enable: true }, // atualizado
+              },
+              modes: {
+                push: { quantity: 4 },
+                repulse: { distance: 200, duration: 0.4 },
+              },
             },
             particles: {
               color: { value: particleColor },
-              number: { value: particleDensity, density: { enable: true, area: 800 } },
+              number: {
+                value: particleDensity,
+                density: {
+                  enable: true,
+                  width: 800, // atualizado
+                  height: 800, // atualizado
+                },
+              },
               size: { value: { min: minSize, max: maxSize } },
-              move: { enable: true, speed: 0.5, outModes: "out", direction: "none" },
-              opacity: { value: { min: 0.1, max: 1 }, animation: { enable: true, speed } },
+              move: {
+                enable: true,
+                speed: 0.5,
+                outModes: "out",
+                direction: "none",
+              },
+              opacity: {
+                value: { min: 0.1, max: 1 },
+                animation: { enable: true, speed },
+              },
               shape: { type: "circle" },
             },
           }}
