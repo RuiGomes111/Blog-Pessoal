@@ -1,4 +1,5 @@
-'use client';
+"use client";
+
 import {
   motion,
   AnimatePresence,
@@ -6,9 +7,15 @@ import {
   Variants,
   Variant,
   MotionConfig,
-} from 'motion/react';
-import { cn } from '@/lib/utils';
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+} from "motion/react";
+import { cn } from "@/lib/utils";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  ReactElement,
+} from "react";
 
 export type AccordionContextType = {
   expandedValue: React.Key | null;
@@ -23,7 +30,7 @@ const AccordionContext = createContext<AccordionContextType | undefined>(
 function useAccordion() {
   const context = useContext(AccordionContext);
   if (!context) {
-    throw new Error('useAccordion must be used within an AccordionProvider');
+    throw new Error("useAccordion must be used within an AccordionProvider");
   }
   return context;
 }
@@ -84,7 +91,7 @@ function Accordion({
 }: AccordionProps) {
   return (
     <MotionConfig transition={transition}>
-      <div className={cn('relative', className)} aria-orientation='vertical'>
+      <div className={cn("relative", className)} aria-orientation="vertical">
         <AccordionProvider
           variants={variants}
           expandedValue={expandedValue}
@@ -109,18 +116,18 @@ function AccordionItem({ value, children, className }: AccordionItemProps) {
 
   return (
     <div
-      className={cn('overflow-hidden', className)}
-      {...(isExpanded ? { 'data-expanded': '' } : {'data-closed': ''})}
+      className={cn("overflow-hidden", className)}
+      {...(isExpanded ? { "data-expanded": "" } : { "data-closed": "" })}
     >
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
-          if (React.isValidElement(child)) {
-  return React.cloneElement(child, {
-    value,
-    expanded: isExpanded,
-  });
-}
-
+          return React.cloneElement(
+            child as ReactElement<{ value?: React.Key; expanded?: boolean }>,
+            {
+              value,
+              expanded: isExpanded,
+            }
+          );
         }
         return child;
       })}
@@ -131,24 +138,25 @@ function AccordionItem({ value, children, className }: AccordionItemProps) {
 export type AccordionTriggerProps = {
   children: ReactNode;
   className?: string;
+  value?: React.Key;
+  expanded?: boolean;
 };
 
 function AccordionTrigger({
   children,
   className,
-  ...props
+  value,
 }: AccordionTriggerProps) {
   const { toggleItem, expandedValue } = useAccordion();
-  const value = (props as { value?: React.Key }).value;
   const isExpanded = value === expandedValue;
 
   return (
     <button
       onClick={() => value !== undefined && toggleItem(value)}
       aria-expanded={isExpanded}
-      type='button'
-      className={cn('group', className)}
-      {...(isExpanded ? { 'data-expanded': '' } : {'data-closed': ''})}
+      type="button"
+      className={cn("group", className)}
+      {...(isExpanded ? { "data-expanded": "" } : { "data-closed": "" })}
     >
       {children}
     </button>
@@ -158,19 +166,20 @@ function AccordionTrigger({
 export type AccordionContentProps = {
   children: ReactNode;
   className?: string;
+  value?: React.Key;
+  expanded?: boolean;
 };
 
 function AccordionContent({
   children,
   className,
-  ...props
+  value,
 }: AccordionContentProps) {
   const { expandedValue, variants } = useAccordion();
-  const value = (props as { value?: React.Key }).value;
   const isExpanded = value === expandedValue;
 
   const BASE_VARIANTS: Variants = {
-    expanded: { height: 'auto', opacity: 1 },
+    expanded: { height: "auto", opacity: 1 },
     collapsed: { height: 0, opacity: 0 },
   };
 
@@ -183,9 +192,9 @@ function AccordionContent({
     <AnimatePresence initial={false}>
       {isExpanded && (
         <motion.div
-          initial='collapsed'
-          animate='expanded'
-          exit='collapsed'
+          initial="collapsed"
+          animate="expanded"
+          exit="collapsed"
           variants={combinedVariants}
           className={className}
         >
