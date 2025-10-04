@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { CiShare1 } from "react-icons/ci";
 
 export default function Projects() {
@@ -7,7 +8,7 @@ export default function Projects() {
       name: "Quiz Sadc",
       stak: ["Next.js", "TailwindCSS", "Framer Motion"],
       icon: [CiShare1],
-      linkOpen:"https://sinal-sadc.vercel.app/",
+      linkOpen: "https://sinal-sadc.vercel.app/",
       img: "/sadc.png",
       description:
         "Plataforma educativa interativa sobre os sinais de trânsito da região da SADC.",
@@ -16,7 +17,7 @@ export default function Projects() {
       name: "DEVersidade",
       stak: ["Next.js", "TailwindCSS"],
       icon: [CiShare1],
-      linkOpen:"https://ruigomes111.github.io/website-deversidade/",
+      linkOpen: "https://ruigomes111.github.io/website-deversidade/",
       img: "/deversidade.png",
       description: "Landing page para uma comunidade de desenvolvedores.",
     },
@@ -24,7 +25,7 @@ export default function Projects() {
       name: "CV Generator",
       stak: ["React.js", "TypeScript", "TailwindCSS"],
       icon: [CiShare1],
-      linkOpen:"https://ruigomes111.github.io/Gerador-de-CV-Inteligente/",
+      linkOpen: "https://ruigomes111.github.io/Gerador-de-CV-Inteligente/",
       img: "/cv.png",
       description: "Gerador de Currículo.",
     },
@@ -41,7 +42,7 @@ export default function Projects() {
 
       <div className="text-white max-w-3xl mx-auto mb-6 text-center">
         <p>
-          Here are some of the projects I’ve developed with dedication and
+          Here are some of the projects I&apos;ve developed with dedication and
           creativity. Each one represents challenges overcome, lessons learned,
           and solutions designed to create real impact. 🚀 Explore and see how I
           turn ideas into digital experiences.
@@ -57,11 +58,14 @@ export default function Projects() {
           >
             {/* Imagem */}
             {skill.img && (
-              <img
-                src={skill.img}
-                alt={skill.name}
-                className="h-48 w-full object-cover rounded-md transition-transform duration-300 hover:scale-105"
-              />
+              <div className="relative h-48 w-full rounded-md overflow-hidden">
+                <Image
+                  src={skill.img}
+                  alt={skill.name}
+                  fill
+                  className="object-cover transition-transform duration-300 hover:scale-105 rounded-md"
+                />
+              </div>
             )}
 
             {/* Stack */}
@@ -79,7 +83,9 @@ export default function Projects() {
             )}
 
             {/* Nome */}
-            <p className="mt-4 font-semibold text-lg text-center">{skill.name}</p>
+            <p className="mt-4 font-semibold text-lg text-center">
+              {skill.name}
+            </p>
 
             {/* Descrição */}
             {skill.description && (
@@ -91,15 +97,13 @@ export default function Projects() {
             {/* Ícones */}
             {skill.icon && (
               <div className="flex gap-4 mt-3 justify-center">
-                <a href={skill.linkOpen} target="_blanck">
-
-                {skill.icon.map((Icon, idx) => (
-                  <Icon
-                    key={idx}
-                    href={skill.linkOpen}
-                    className="text-gray-100 text-2xl hover:text-cyan-500 cursor-pointer transition-colors"
-                  />
-                ))}
+                <a href={skill.linkOpen} target="_blank" rel="noopener noreferrer">
+                  {skill.icon.map((Icon, idx) => (
+                    <Icon
+                      key={idx}
+                      className="text-gray-100 text-2xl hover:text-cyan-500 cursor-pointer transition-colors"
+                    />
+                  ))}
                 </a>
               </div>
             )}

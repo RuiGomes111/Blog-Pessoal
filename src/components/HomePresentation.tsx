@@ -4,11 +4,11 @@ import { FaArrowDown } from "react-icons/fa6";
 import ScrollIndicator from "./scroll/ScrollIndicator";
 
 export default function HomePresentation() {
-  const text=(
+  const text = (
     <p>
-      Hi, I'm <span className="text-[#d8973cd7]">Rui Gomes</span>
+      Hi, I&apos;m <span className="text-[#d8973cd7]">Rui Gomes</span>
     </p>
-  )
+  );
   return (
     <>
       <div className="flex flex-col justify-center items-center">
@@ -32,7 +32,7 @@ export default function HomePresentation() {
           Check Out My Blog <FaArrowDown />
         </Link>
         <div>
-          <ScrollIndicator/>
+          <ScrollIndicator />
         </div>
       </div>
     </>
