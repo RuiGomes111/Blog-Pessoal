@@ -1,27 +1,37 @@
-import HomePresentation from "@/_components/HomePresentation";
-import GithubAPI from "@/_components/GithubAPI";
-import About from "../_components/About/About";
-import  SparklesCore  from "@/_components/SparklesPreview";
-
-
-export default function Home() {
+import HomePresentation from "@/components/HomePresentation";
+import About from "../components/About/About";
+import SparklesCore from "@/components/SparklesPreview";
+import Contact from "@/components/Contact/Contact";
+import SkillsSection from "@/components/Skills/skills";
+import Projects from "@/components/Projets/Projects";
+export default async function HomePage() {
   return (
-    <div className="bg-[#030A15]  font-sans relative overflow-hidden">
-      
-         
-         
+    <div className="bg-[#05080F] font-sans relative overflow-hidden">
+      <div>
         <SparklesCore />
-      
-     
-      
-      
-      <section className=" min-h-screen grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 text-[#E6E6E6] ">
-        <HomePresentation />
-        <GithubAPI/>
-      </section>
-      <section className="min-h-screen">
-        <About />
-      </section>
+
+        <section className="min-h-screen flex justify-center ">
+          <HomePresentation />
+        </section>
+
+        <section className="min-h-screen flex justify-center items-center">
+          <About />
+        </section>
+
+        {/* Grid de skills */}
+        <section>
+          <SkillsSection />
+        </section>
+
+        {/* Grid de projects */}
+        <section>
+          <Projects />
+        </section>
+
+        <section className="max-w-5xl mx-auto min-h-screen px-4">
+          <Contact />
+        </section>
+      </div>
     </div>
   );
 }

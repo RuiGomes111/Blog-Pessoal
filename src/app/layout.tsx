@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Maincontainer from "@/_components/Maincontainer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -35,11 +36,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Locomotive Scroll CSS via CDN */}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/locomotive-scroll@5.0.0-beta.10/dist/locomotive-scroll.css"
+        />
+      </head>
       <body
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${poppins.variable}`}
       >
-        <Maincontainer>{children}</Maincontainer>
+        <Navbar />
+        {children}
+        <Footer/>
       </body>
     </html>
   );

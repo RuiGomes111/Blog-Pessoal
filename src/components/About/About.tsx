@@ -1,20 +1,18 @@
 import Link from "next/link";
-import { AccordionIcons } from "@/_components/AccordionIcons";
+import { AccordionIcons } from "@/components/AccordionIcons";
 import { MdOutlinePerson } from "react-icons/md";
 export default function About() {
   return (
     <>
       <div
         id="about"
-        className="bg-[#030A15] min-h-screen text-[#E6E6E6] max-w-5xl items-center mx-auto mt-20 px-4"
+        className="bg-[#030A15] min-h-screen text-[#E6E6E6] max-w-5xl items-center mx-auto px-4"
       >
-        <div className="flex text-4xl">
-          <span className="text-[#3178C6] font-bold mr-3">
+        <div className="flex text-xl sm:text-2xl lg:text-3xl">
+          <span className="text-[#D8C99B] font-bold mr-3">
             <MdOutlinePerson />
           </span>
-          <span className="uppercase tracking-wider font-semibold mr-3 ">
-            About
-          </span>
+          <span className="tracking-wider font-semibold mr-3 ">About</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-gray-600 p-6 gap-10">
@@ -34,13 +32,13 @@ export default function About() {
 
             {/*botões */}
             <div className="flex gap-3">
-              <button className="bg-blue-600 p-2 rounded">
+              <Link href="#contact" className="bg-[#d8973cd7] p-2 rounded  transition-colors hover:bg-[#d8973cab] cursor-pointer">
                 Entrar em Contacto
-              </button>
+              </Link>
               <Link
                 download
                 href="/curriculum.pdf"
-                className="bg-gray-600 p-2 rounded"
+                className="border p-2 rounded transition-transform hover:scale-102"
               >
                 Baixar CV
               </Link>
