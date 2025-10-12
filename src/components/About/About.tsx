@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { AccordionIcons } from "@/components/AccordionIcons";
 import { MdOutlinePerson } from "react-icons/md";
