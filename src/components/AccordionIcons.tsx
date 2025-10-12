@@ -23,7 +23,7 @@ export function AccordionIcons() {
         </AccordionTrigger>
         <AccordionContent>
           <p className="text-zinc-100 dark:text-zinc-400">
-            I hold a degree in Computer Engineering and am an early-career fullstack developer, passionate about technology and the impact it can have on people's lives.
+            I hold a degree in Computer Engineering and am an early-career fullstack developer, passionate about technology and the impact it can have on people&apos;s lives.
 
           </p>
         </AccordionContent>
