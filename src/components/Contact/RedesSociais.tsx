@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { FiGithub } from "react-icons/fi";
 import { CiYoutube } from "react-icons/ci";
 import { SlSocialLinkedin } from "react-icons/sl";
