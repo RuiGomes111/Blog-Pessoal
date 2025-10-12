@@ -5,7 +5,7 @@ import { CiYoutube } from "react-icons/ci";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { RiTiktokLine } from "react-icons/ri";
 import Link from "next/link";
-import ProfileCard from "../ProfileCard/ProfileCard";
+
 export default function RedesSociais() {
   return (
     <>

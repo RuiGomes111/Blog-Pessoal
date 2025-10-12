@@ -11,7 +11,7 @@ export default function Projects() {
       linkOpen: "https://sinal-sadc.vercel.app/",
       img: "/sadc.png",
       description:
-        "Plataforma educativa interativa sobre os sinais de trânsito da região da SADC.",
+        "Interactive educational platform about traffic signs in the SADC region.",
     },
     {
       name: "DEVersidade",
@@ -19,7 +19,7 @@ export default function Projects() {
       icon: [CiShare1],
       linkOpen: "https://ruigomes111.github.io/website-deversidade/",
       img: "/deversidade.png",
-      description: "Landing page para uma comunidade de desenvolvedores.",
+      description: "Landing page for a developer community.",
     },
     {
       name: "CV Generator",
@@ -27,7 +27,7 @@ export default function Projects() {
       icon: [CiShare1],
       linkOpen: "https://ruigomes111.github.io/Gerador-de-CV-Inteligente/",
       img: "/cv.png",
-      description: "Gerador de Currículo.",
+      description: "Intelligent Resume Builder.",
     },
   ];
 

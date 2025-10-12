@@ -29,9 +29,9 @@ export default function Contact() {
         <div className="w-full md:w-1/2 flex justify-center">
           <ProfileCard
             name="Rui Gomes"
-            title="Fullstack Developer | Criador de Soluções Digitais"
+            title="Fullstack Developer | Digital Solutions Creator"
             handle="@ruigomes-dev"
-            status="Disponível"
+            status="Available"
             avatarUrl="/gomes.webp"
           />
         </div>
