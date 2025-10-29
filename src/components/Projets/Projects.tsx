@@ -9,7 +9,7 @@ export default function Projects() {
       stak: ["Next.js", "TailwindCSS", "Framer Motion"],
       icon: [CiShare1],
       linkOpen: "https://sinal-sadc.vercel.app/",
-      img: "/sadc.png",
+      img: "/sadc.webp",
       description:
         "Interactive educational platform about traffic signs in the SADC region.",
     },
@@ -18,7 +18,7 @@ export default function Projects() {
       stak: ["Next.js", "TailwindCSS"],
       icon: [CiShare1],
       linkOpen: "https://ruigomes111.github.io/website-deversidade/",
-      img: "/deversidade.png",
+      img: "/deversidade.webp",
       description: "Landing page for a developer community.",
     },
     {
@@ -26,9 +26,17 @@ export default function Projects() {
       stak: ["React.js", "TypeScript", "TailwindCSS"],
       icon: [CiShare1],
       linkOpen: "https://ruigomes111.github.io/Gerador-de-CV-Inteligente/",
-      img: "/cv.png",
+      img: "/cv.webp",
       description: "Intelligent Resume Builder.",
     },
+    {
+      name: "Lacrei Saúde — Frontend Challenge",
+      stack: ["next.js", "TypeScript", "Styled Component"],
+      icon: [CiShare1],
+      linkOpen: "https://desafio-lacrei-saude-alpha.vercel.app/",
+      img: "/lacrei.webp",
+      description: "Project developed as part of a technical challenge proposed by the Lacrei Saúde platform. The goal was to create a responsive and accessible landing page focused on digital inclusion and LGBTQIAPN+ representation. Built with Next.js, React, and Styled Components, emphasizing UI/UX best practices and high performance.",
+    }
   ];
 
   return (
