@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { FiGithub } from "react-icons/fi";
 import { CiYoutube } from "react-icons/ci";
 import { SlSocialLinkedin } from "react-icons/sl";
@@ -9,7 +9,6 @@ export default function RedesSociais() {
   return (
     <>
       <div className="text-3xl pt-4 text-[#e6e6e6b7]">
-      
         <ul className="flex gap-4 cursor-pointer">
           <li className="hover:drop-shadow-[0_0_10px_#ffffff] transition">
             <Link href="https://github.com/RuiGomes111" target="blank">
@@ -31,12 +30,11 @@ export default function RedesSociais() {
           </li>
           <li className="hover:drop-shadow-[0_0_10px_#ffffff] transition">
             <Link
-              href="https://www.linkedin.com/in/ruigomes-dev/"
+              href="https://www.linkedin.com/in/rui-gomes-28bb173a0/"
               target="blank"
-            >
-              {" "}
-            </Link>
+            >              
             <SlSocialLinkedin />
+            </Link>
           </li>
         </ul>
       </div>

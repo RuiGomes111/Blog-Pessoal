@@ -5,7 +5,9 @@ import Contact from "@/components/Contact/Contact";
 import SkillsSection from "@/components/Skills/skills";
 import Projects from "@/components/Projets/Projects";
 
+
 export default async function HomePage() {
+  
   return (
     <div className="bg-[#05080F] font-sans relative overflow-hidden">
       <div>
