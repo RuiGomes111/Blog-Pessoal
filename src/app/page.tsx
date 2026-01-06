@@ -5,7 +5,6 @@ import Contact from "@/components/Contact/Contact";
 import SkillsSection from "@/components/Skills/skills";
 import Projects from "@/components/Projets/Projects";
 
-
 export default async function HomePage() {
   
   return (

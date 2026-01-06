@@ -8,8 +8,15 @@ const nextConfig: NextConfig = {
     defaultLocale: "en",   // idioma padrão
   },*/
    images: {
-    domains: ["avatars.githubusercontent.com"],
-  },
+  remotePatterns: [
+    {
+      protocol: 'https',
+      hostname: 'images.unsplash.com',
+      pathname: '/**',
+    },
+  ],
+},
+
 };
 
 export default nextConfig;
