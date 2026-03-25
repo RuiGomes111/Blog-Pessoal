@@ -36,6 +36,14 @@ export default function Projects() {
       linkOpen: "https://desafio-lacrei-saude-alpha.vercel.app/",
       img: "/lacrei.webp",
       description: "Project developed as part of a technical challenge proposed by the Lacrei Saúde platform. The goal was to create a responsive and accessible landing page focused on digital inclusion and LGBTQIAPN+ representation. Built with Next.js, React, and Styled Components, emphasizing UI/UX best practices and high performance.",
+    },
+    {
+      name: "ACHAEL - Comércio e Prestação de Serviços, LDA",
+      stack: ["React.js", "TypeScript", "TailwindCSS"],
+      icon: [CiShare1],
+      linkOpen: "https://achael.vercel.app/",
+      img: "/achael.webp",
+      description: "This project consists of a modern and responsive institutional website, designed to clearly and attractively showcase the services offered while providing a direct contact channel for clients. The design was created to deliver a smooth experience on both desktop and mobile devices, ensuring all information is easily accessible without compromising aesthetics.",
     }
   ];
 
