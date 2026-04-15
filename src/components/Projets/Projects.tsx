@@ -31,7 +31,7 @@ export default function Projects() {
     },
     {
       name: "Lacrei Saúde — Frontend Challenge",
-      stack: ["next.js", "TypeScript", "Styled Component"],
+      stak: ["next.js", "TypeScript", "Styled Component"],
       icon: [CiShare1],
       linkOpen: "https://desafio-lacrei-saude-alpha.vercel.app/",
       img: "/lacrei.webp",
@@ -39,12 +39,22 @@ export default function Projects() {
     },
     {
       name: "ACHAEL - Comércio e Prestação de Serviços, LDA",
-      stack: ["React.js", "TypeScript", "TailwindCSS"],
+      stak: ["React.js", "TypeScript", "TailwindCSS"],
       icon: [CiShare1],
       linkOpen: "https://achael.vercel.app/",
       img: "/achael.webp",
       description: "This project consists of a modern and responsive institutional website, designed to clearly and attractively showcase the services offered while providing a direct contact channel for clients. The design was created to deliver a smooth experience on both desktop and mobile devices, ensuring all information is easily accessible without compromising aesthetics.",
-    }
+    },
+    
+  {
+    name: "SADC Traffic API",
+    stak: ["React.js", "TypeScript", "TailwindCSS"],
+    icon: [CiShare1],
+    linkOpen: "https://sadc-traffic-api.vercel.app/",
+    img: "/sadcAPI.png",
+    description: "This is a SADC traffic signaling API, developed to provide detailed and standardized information on road regulations and signs across the region. The project features a modern, responsive interface for quick queries, ensuring data accessibility for both developers and end-users."
+}
+
   ];
 
   return (
