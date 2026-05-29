@@ -22,14 +22,7 @@ export default function Projects() {
       img: "/lacrei.webp",
       description: "Project developed as part of a technical challenge proposed by the Lacrei Saúde platform. The goal was to create a responsive and accessible landing page focused on digital inclusion and LGBTQIAPN+ representation. Built with Next.js, React, and Styled Components, emphasizing UI/UX best practices and high performance.",
     },
-    {
-      name: "ACHAEL - Comércio e Prestação de Serviços, LDA",
-      stak: ["React.js", "TypeScript", "TailwindCSS"],
-      icon: [CiShare1],
-      linkOpen: "https://achael.vercel.app/",
-      img: "/achael.webp",
-      description: "This project consists of a modern and responsive institutional website, designed to clearly and attractively showcase the services offered while providing a direct contact channel for clients. The design was created to deliver a smooth experience on both desktop and mobile devices, ensuring all information is easily accessible without compromising aesthetics.",
-    },
+    
     
   {
     name: "SADC Traffic API",
@@ -40,13 +33,12 @@ export default function Projects() {
     description: "This is a SADC traffic signaling API, developed to provide detailed and standardized information on road regulations and signs across the region. The project features a modern, responsive interface for quick queries, ensuring data accessibility for both developers and end-users."
 },
 {
-      name: "Quiz Sadc",
-      stak: ["Next.js", "TailwindCSS", "Framer Motion"],
+      name: "ACHAEL - Comércio e Prestação de Serviços, LDA",
+      stak: ["React.js", "TypeScript", "TailwindCSS"],
       icon: [CiShare1],
-      linkOpen: "https://sinal-sadc.vercel.app/",
-      img: "/sadc.webp",
-      description:
-        "Interactive educational platform about traffic signs in the SADC region.",
+      linkOpen: "https://achael.vercel.app/",
+      img: "/achael.webp",
+      description: "This project consists of a modern and responsive institutional website, designed to clearly and attractively showcase the services offered while providing a direct contact channel for clients. The design was created to deliver a smooth experience on both desktop and mobile devices, ensuring all information is easily accessible without compromising aesthetics.",
     },
     {
       name: "DEVersidade",
