@@ -4,31 +4,16 @@ import { CiShare1 } from "react-icons/ci";
 
 export default function Projects() {
   const skills = [
+    
     {
-      name: "Quiz Sadc",
-      stak: ["Next.js", "TailwindCSS", "Framer Motion"],
-      icon: [CiShare1],
-      linkOpen: "https://sinal-sadc.vercel.app/",
-      img: "/sadc.webp",
-      description:
-        "Interactive educational platform about traffic signs in the SADC region.",
-    },
-    {
-      name: "DEVersidade",
-      stak: ["Next.js", "TailwindCSS"],
-      icon: [CiShare1],
-      linkOpen: "https://ruigomes111.github.io/website-deversidade/",
-      img: "/deversidade.webp",
-      description: "Landing page for a developer community.",
-    },
-    {
-      name: "CV Generator",
-      stak: ["React.js", "TypeScript", "TailwindCSS"],
-      icon: [CiShare1],
-      linkOpen: "https://ruigomes111.github.io/Gerador-de-CV-Inteligente/",
-      img: "/cv.webp",
-      description: "Intelligent Resume Builder.",
-    },
+  name: "PDF Libras — Accessibility Tool",
+  stak: ["React.js", "TypeScript", "vite"],
+  icon: [CiShare1],
+  linkOpen: "https://pdf-libras.vercel.app/",
+  img: "/vlibras.webp",
+  description:
+    "Project developed to enhance digital accessibility through Libras (Brazilian Sign Language) integration.",
+},
     {
       name: "Lacrei Saúde — Frontend Challenge",
       stak: ["next.js", "TypeScript", "Styled Component"],
@@ -53,8 +38,25 @@ export default function Projects() {
     linkOpen: "https://sadc-traffic-api.vercel.app/",
     img: "/sadcAPI.png",
     description: "This is a SADC traffic signaling API, developed to provide detailed and standardized information on road regulations and signs across the region. The project features a modern, responsive interface for quick queries, ensuring data accessibility for both developers and end-users."
-}
-
+},
+{
+      name: "Quiz Sadc",
+      stak: ["Next.js", "TailwindCSS", "Framer Motion"],
+      icon: [CiShare1],
+      linkOpen: "https://sinal-sadc.vercel.app/",
+      img: "/sadc.webp",
+      description:
+        "Interactive educational platform about traffic signs in the SADC region.",
+    },
+    {
+      name: "DEVersidade",
+      stak: ["Next.js", "TailwindCSS"],
+      icon: [CiShare1],
+      linkOpen: "https://ruigomes111.github.io/website-deversidade/",
+      img: "/deversidade.webp",
+      description: "Landing page for a developer community.",
+    },
+    
   ];
 
   return (

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { FaHtml5, FaJs, FaReact, FaNodeJs, FaDatabase, FaGithub, FaPython } from "react-icons/fa";
+import { TbBrandCSharp } from "react-icons/tb";
 import { SiNextdotjs, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,7 +12,7 @@ export default function SkillsSection() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // duração padrão das animações
+      duration: 1000, 
       once: false,    // animação ocorre toda vez que entra na viewport
       easing: "ease-in-out",
     });
@@ -33,6 +34,7 @@ export default function SkillsSection() {
     { name: "GitHub", icon: <FaGithub className="text-black text-3xl" /> },
     { name: "TailwindCSS", icon: <SiTailwindcss className="text-blue-400 text-3xl" /> },
     { name: "Vercel", icon: <SiVercel className="text-black text-3xl" /> },
+    { name: "C Sharp", icon: <TbBrandCSharp className="text-blue-500 text-3xl" /> },
   ];
 
   return (
