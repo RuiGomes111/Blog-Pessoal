@@ -22,22 +22,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rui Gomes | Fullstack Developer & Digital Solutions Creator",
+  title: "Rui Gomes | Fullstack Developer & IT Professional",
   description:
-    "Rui Gomes é um desenvolvedor fullstack apaixonado por criar soluções digitais eficientes e inovadoras. Experiência em desenvolvimento web, redes e suporte técnico. Disponível para projetos remotos e presenciais.",
+    "Profissional de tecnologia com formação em Engenharia Informática. Especialista em desenvolvimento web (React, Next.js, Node.js), redes de computadores e suporte técnico. Disponível para projetos remotos e presenciais.",
   keywords: [
     "Rui Gomes",
     "Desenvolvedor Fullstack",
-    "Fullstack Developer",
+    "Engenharia Informática",
     "Desenvolvimento Web",
     "React",
     "Next.js",
-    "Tailwind CSS",
     "Node.js",
+    "Tailwind CSS",
+    "Redes de Computadores",
     "Desenvolvedor Angolano",
-    "Digital Solutions",
+    "Angola","Luanda", "Huambo",
     "Software Developer",
-    "Web Developer",
   ],
   authors: [{ name: "Rui Gomes" }],
   creator: "Rui Gomes",
@@ -46,14 +46,14 @@ export const metadata: Metadata = {
     icon: "/alien.svg",
   },
   openGraph: {
-    title: "Rui Gomes | Fullstack Developer & Digital Solutions Creator",
+    title: "Rui Gomes | Fullstack Developer & IT Professional",
     description:
-      "Desenvolvedor Fullstack com foco em tecnologia, impacto real e aprendizado contínuo. Veja meus projetos e entre em contacto!",
-    url: "http://blog-rui-gomes.vercel.app/", 
+      "Profissional de tecnologia com formação em Engenharia Informática. Veja os meus projetos e entre em contacto!",
+    url: "https://blog-rui-gomes.vercel.app/",
     siteName: "Rui Gomes Dev",
     images: [
       {
-        url: "/og-image.png", // opcional, podes criar uma imagem personalizada
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Rui Gomes | Fullstack Developer",
@@ -64,14 +64,13 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pt-AO" suppressHydrationWarning>
       <head>
         {/* Locomotive Scroll CSS via CDN */}
         <link
@@ -85,7 +84,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
