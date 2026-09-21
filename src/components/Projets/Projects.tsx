@@ -4,41 +4,52 @@ import { CiShare1 } from "react-icons/ci";
 
 export default function Projects() {
   const skills = [
-    
     {
-  name: "PDF Libras — Accessibility Tool",
-  stak: ["React.js", "TypeScript", "vite"],
-  icon: [CiShare1],
-  linkOpen: "https://pdf-libras.vercel.app/",
-  img: "/vlibras.webp",
-  description:
-    "Project developed to enhance digital accessibility through Libras (Brazilian Sign Language) integration.",
-},
+      name: "Provas Online — Assessment Platform",
+      stak: ["Next.js", "TypeScript", "Supabase"],
+      icon: [CiShare1],
+      linkOpen: "https://provas-online.vercel.app/",
+      img: "/provas_online.webp",
+      description:
+        "Platform developed for managing and taking online tests and assessments efficiently.",
+    },
+
+    {
+      name: "PDF Libras — Accessibility Tool",
+      stak: ["React.js", "TypeScript", "vite"],
+      icon: [CiShare1],
+      linkOpen: "https://pdf-libras.vercel.app/",
+      img: "/vlibras.webp",
+      description:
+        "Project developed to enhance digital accessibility through Libras (Brazilian Sign Language) integration.",
+    },
+    {
+      name: "SADC Traffic API",
+      stak: ["React.js", "TypeScript", "TailwindCSS"],
+      icon: [CiShare1],
+      linkOpen: "https://sadc-traffic-api.vercel.app/",
+      img: "/sadcAPI.png",
+      description:
+        "This is a SADC traffic signaling API, developed to provide detailed and standardized information on road regulations and signs across the region. The project features a modern, responsive interface for quick queries, ensuring data accessibility for both developers and end-users.",
+    },
     {
       name: "Lacrei Saúde — Frontend Challenge",
       stak: ["next.js", "TypeScript", "Styled Component"],
       icon: [CiShare1],
       linkOpen: "https://desafio-lacrei-saude-alpha.vercel.app/",
       img: "/lacrei.webp",
-      description: "Project developed as part of a technical challenge proposed by the Lacrei Saúde platform. The goal was to create a responsive and accessible landing page focused on digital inclusion and LGBTQIAPN+ representation. Built with Next.js, React, and Styled Components, emphasizing UI/UX best practices and high performance.",
+      description:
+        "Project developed as part of a technical challenge proposed by the Lacrei Saúde platform. The goal was to create a responsive and accessible landing page focused on digital inclusion and LGBTQIAPN+ representation. Built with Next.js, React, and Styled Components, emphasizing UI/UX best practices and high performance.",
     },
-    
-    
-  {
-    name: "SADC Traffic API",
-    stak: ["React.js", "TypeScript", "TailwindCSS"],
-    icon: [CiShare1],
-    linkOpen: "https://sadc-traffic-api.vercel.app/",
-    img: "/sadcAPI.png",
-    description: "This is a SADC traffic signaling API, developed to provide detailed and standardized information on road regulations and signs across the region. The project features a modern, responsive interface for quick queries, ensuring data accessibility for both developers and end-users."
-},
-{
+
+    {
       name: "ACHAEL - Comércio e Prestação de Serviços, LDA",
       stak: ["React.js", "TypeScript", "TailwindCSS"],
       icon: [CiShare1],
       linkOpen: "https://achael.vercel.app/",
       img: "/achael.webp",
-      description: "This project consists of a modern and responsive institutional website, designed to clearly and attractively showcase the services offered while providing a direct contact channel for clients. The design was created to deliver a smooth experience on both desktop and mobile devices, ensuring all information is easily accessible without compromising aesthetics.",
+      description:
+        "This project consists of a modern and responsive institutional website, designed to clearly and attractively showcase the services offered while providing a direct contact channel for clients. The design was created to deliver a smooth experience on both desktop and mobile devices, ensuring all information is easily accessible without compromising aesthetics.",
     },
     {
       name: "DEVersidade",
@@ -48,7 +59,6 @@ export default function Projects() {
       img: "/deversidade.webp",
       description: "Landing page for a developer community.",
     },
-    
   ];
 
   return (
@@ -117,7 +127,11 @@ export default function Projects() {
             {/* Ícones */}
             {skill.icon && (
               <div className="flex gap-4 mt-3 justify-center">
-                <a href={skill.linkOpen} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={skill.linkOpen}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {skill.icon.map((Icon, idx) => (
                     <Icon
                       key={idx}
